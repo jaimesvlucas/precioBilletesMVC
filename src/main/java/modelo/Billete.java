@@ -43,7 +43,7 @@ public class Billete {
         double precioSinIva=0;
         if(mes >=5 && mes <=9) precioSinIva = 150*this.cantidad;
         else precioSinIva = 90*this.cantidad;
-        return precioSinIva*1.21;
+        return Math.floor(precioSinIva*1.21);
     }
     
 }
